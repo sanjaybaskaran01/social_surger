@@ -9,7 +9,7 @@ function Footer() {
         <div className="grid items-center grid-cols-[0.3fr_1fr] ">
           <Image src={SocialSurgerLogo} alt="Social Surger Logo" />
           <p className="font-medium">
-            Social Surgers | hello@socialsurgers.com | Chennai, IN
+            Social Surger | contact@socialsurger.com | Chennai, IN
           </p>
         </div>
       </div>

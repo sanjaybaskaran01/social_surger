@@ -2,11 +2,10 @@ import Image from "next/image";
 import React from "react";
 import socialSurger from "../../public/SocialSurger-transparent.png";
 import Link from "next/link";
-import emailSvg from "../../public/email.svg";
 
 function Navbar() {
   return (
-    <div className="py-9 relative z-50">
+    <div className="py-9 absolute self-center w-full z-50">
       <div className="w-2/5 h-full mx-auto px-6 font-bold">
         <div className="sticky shadow-[7px_7px_0_0_#222] flex p-[10px_14px] justify-between items-center bg-white rounded-2xl border-2 border-[#222]">
           <Link href="#hero" scroll={false}>
@@ -20,21 +19,40 @@ function Navbar() {
             <nav className="relative float-right">
               <ul className="flex mb-0 pl-0 text-xl justify-end items-center">
                 <li className="px-3 leading-5">
-                  <Link className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth" scroll={false} href="#services">What we do</Link>
+                  <Link
+                    className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth"
+                    scroll={false}
+                    href="#services"
+                  >
+                    What we do
+                  </Link>
                 </li>
                 <li className="px-3 leading-5">
-                  <Link className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth" scroll={false} href="">Why us</Link>
+                  <Link
+                    className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth"
+                    scroll={false}
+                    href=""
+                  >
+                    Why us
+                  </Link>
                 </li>
                 <li className="px-3 leading-5">
-                  <Link className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth" scroll={false} href="">Our work</Link>
+                  <Link
+                    className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth"
+                    scroll={false}
+                    href=""
+                  >
+                    Our work
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="justify-end flex ">
             <Link
-              href="https://calendly.com/en/"
-              className="bg-surger_purple  p-4 rounded-2xl transition text-center border-none text-white ease-in-out duration-300 hover:-translate-y-1 font-bold hover:bg-[#f2a11f]"
+              href="#contactUs"
+              scroll={false}
+              className="bg-surger_purple  scroll-smooth p-4 rounded-2xl transition text-center border-none text-white ease-in-out duration-300 hover:-translate-y-1 font-bold hover:bg-[#f2a11f]"
             >
               <svg
                 fill="#000000"
@@ -44,9 +62,7 @@ function Navbar() {
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 75.294 75.294"
-                // xml:space="preserve"
               >
                 <g>
                   <path

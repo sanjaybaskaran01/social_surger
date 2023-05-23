@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "./Card";
+import Link from "next/link";
+import Button from "./Button";
 
 type Props = {};
 
@@ -12,16 +13,18 @@ function ContactUs({}: Props) {
       <div className="grid grid-cols-2 items-center gap-14">
         <div className="container flex flex-col w-3/4 gap-2">
           <p className="font-bold text-7xl mb-4">
-            <span className="bg-[#F3A120] text-white">Contact</span> us
+            <span className="bg-[#F3A120] hover:bg-[#fffcf4] hover:text-[#F3A120] transition ease-in-out duration-300 text-white">15 Minutes</span> Call
           </p>
           <p className="font-medium mb-8 text-lg">
             Click here to choose a time that suits you, and we&apos;ll send you a
-            video call invite to have a 30-min call and see how we can work
+            video call invite to have a 15-min call and see how we can work
             together. Or, feel free to send us an email using the contact form
             first, and we&apos;ll get back to you within 24 hours!
           </p>
           <div className="w-3/4">
-            <Card content="" header="Schedule our first call" className="hover:text-surger_purple" />
+            <Link href="https://calendly.com/socialsurger/consultation-call" target="_blank">
+            <Button content="" header="Schedule our first call" className="hover:text-surger_purple" />
+            </Link>
           </div>
         </div>
         <div className="justify-end">
