@@ -8,5 +8,9 @@ const roboto = Roboto({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} className={roboto.className} />;
+  return (
+    <main className="text-[#222] font-medium">
+      <Component {...pageProps}  />;
+    </main>
+  );
 }

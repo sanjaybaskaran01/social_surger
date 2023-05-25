@@ -9,7 +9,7 @@ interface CardProps {
 const Card: FC<CardProps> = ({ header, content, className }) => {
   return (
     <div
-      className={`justify-center py-10 cursor-pointer flex flex-col transition w-2/3 ease-in-out duration-300 bg-white rounded-3xl border-4 border-[#222] hover:shadow-[10px_10px_0_0_#0b0b0b] ${
+      className={`justify-center py-10 cursor-pointer flex flex-col transition w-3/4 ease-in-out duration-300 bg-white rounded-3xl border-4 border-[#222] hover:shadow-[10px_10px_0_0_#0b0b0b] ${
         className ? className : ""
       }`}
     >

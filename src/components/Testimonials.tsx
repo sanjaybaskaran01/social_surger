@@ -1,40 +1,126 @@
 import Slider from "react-slick";
 
 const Testimonials = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
-    pauseOnHover: false,
-  };
 
   return (
-    <div id="testimonials">
-      <h1>Our Collaborations</h1>
-      <Slider {...settings}>
-        {/* Replace the following with the logos of the companies */}
-        <div>
-          <img src="/heroPage.svg" alt="Logo 1" />
+    <section id="testimonials" className="overflow-none py-2 bg-[#222]">
+      <div className="slider">
+        <div className="slide-track">
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/mamata.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/kapaas.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/creta.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/black.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/cotton-club.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/ashwini.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/red.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/mamata.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/kapaas.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/creta.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/black.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/cotton-club.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/ashwini.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="http://www.mamatafabrics.com/resources/img/product-logo/red.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
         </div>
-        <div>
-          <img src="/heroPage.svg" alt="Logo 2" />
-        </div>
-        <div>
-          <img src="/heroPage.svg" alt="Logo 3" />
-        </div>
-        <div>
-          <img src="/heroPage.svg" alt="Logo 4" />
-        </div>
-      </Slider>
-
-      <style jsx>{`
-        /* add your CSS here */
-      `}</style>
-    </div>
+      </div>
+    </section>
   );
 };
 

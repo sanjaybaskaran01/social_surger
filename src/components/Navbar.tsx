@@ -1,26 +1,28 @@
 import Image from "next/image";
 import React from "react";
-import socialSurger from "../../public/SocialSurger-transparent.png";
+import socialSurger from "../../public/SocialSurgerBlack.png";
 import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="py-9 absolute self-center w-full z-50">
-      <div className="w-2/5 h-full mx-auto px-6 font-bold">
+    <div className="py-9 relative self-center w-full z-50">
+      <div className="max-w-3xl h-full mx-auto px-6 font-bold">
         <div className="sticky shadow-[7px_7px_0_0_#222] flex p-[10px_14px] justify-between items-center bg-white rounded-2xl border-2 border-[#222]">
           <Link href="#hero" scroll={false}>
             <Image
-              className="h-16 w-auto"
+              className="w-32 sm:w-44 h-auto"
               src={socialSurger}
               alt="Social Surger logo"
             />
           </Link>
           <div className="flex items-center gap-x-3">
             <nav className="relative float-right">
-              <ul className="flex mb-0 pl-0 text-xl justify-end items-center">
+            <ul className="hidden mb-0 pl-0 text-xl justify-end items-center">
+              
+              {/* <ul className="hidden lg:flex  mb-0 pl-0 text-xl justify-end items-center"> */}
                 <li className="px-3 leading-5">
                   <Link
-                    className="font-bold transition ease-in hover:text-surger_purple cursor-pointer duration-300 scroll-smooth"
+                    className="font-bold transition ease-in  hover:text-surger_purple cursor-pointer duration-300 scroll-smooth"
                     scroll={false}
                     href="#services"
                   >

@@ -4,7 +4,13 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="title" content="Social Surger - Boost Social Media Presence" key="title" />
+        <title>Social Surger - Digital Agency</title>
+        <meta property="og:title" content="Social Surger - Digital Agency" key="title" />
+        {/* <meta
+          name="title"
+          content="Social Surger - Boost Social Media Presence"
+          key="title"
+        /> */}
         <meta
           name="description"
           content="Need a boost in online visibility? Choose Social Surger, the experts in crafting bespoke social media marketing strategies. Transform your brand's digital footprint, engage audiences, and drive unprecedented growth. Partner with us today for success tomorrow!"
