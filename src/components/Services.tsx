@@ -7,8 +7,8 @@ function Services() {
       id="services"
       className="h-screen container mx-auto flex flex-col justify-center"
     >
-      <div className="p-6 mb-4 !leading-normal font-bold text-center text-4xl lg:text-7xl">
-        <p className="mb-7 whitespace-nowrap">
+      <div className="p-6 mb-4 !leading-normal font-bold text-left sm:text-center text-5xl lg:text-7xl">
+        <p className="">
           You have a <span className="bg-surger_purple hover:bg-[#fffcf4] transition ease-in-out duration-300 hover:text-surger_purple text-white">problem</span>.
         </p>
         <p>
@@ -16,7 +16,7 @@ function Services() {
           <span className="bg-[#F2A11E] hover:bg-[#fffcf4] hover:text-[#F2A11E] text-white transition ease-in-out duration-300">solution</span>.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:mx-20 h-1/2 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:mx-20 h-1/2 gap-4 lg:gap-0  p-4 lg:p-0  justify-items-center">
         <Card
           header="Website Development"
           content="Boost your user acquisition rate with our easy-to-use, state-of-the-art websites. Built specifically to achieve your goals"

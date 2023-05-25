@@ -22,15 +22,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.text_background {
-  background-image: linear-gradient(180deg, transparent 10%, #9c35c4 0);
-  color: white;
-}
 
-.text_background:hover {
-  background-image: linear-gradient(180deg, transparent 10%, #fffcf4 0);
-  color: #9C35C4;
-}
 
 @keyframes scroll {
   0% {

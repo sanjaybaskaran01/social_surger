@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      {/* <Services /> */}
-      {/* <ContactUs /> */}
-      {/* <Footer /> */}
+      <Services />
+      <ContactUs />
+      <Footer />
     </>
   );
 }

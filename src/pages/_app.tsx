@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Roboto } from "next/font/google";
+import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -9,8 +10,13 @@ const roboto = Roboto({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className="text-[#222] font-medium">
-      <Component {...pageProps}  />;
-    </main>
+    <>
+      <Head>
+        <title>Social Surger - Digital Agency</title>
+      </Head>
+      <main className="text-[#222] font-medium">
+        <Component {...pageProps} />;
+      </main>
+    </>
   );
 }

@@ -4,13 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>Social Surger - Digital Agency</title>
-        <meta property="og:title" content="Social Surger - Digital Agency" key="title" />
-        {/* <meta
-          name="title"
-          content="Social Surger - Boost Social Media Presence"
-          key="title"
-        /> */}
         <meta
           name="description"
           content="Need a boost in online visibility? Choose Social Surger, the experts in crafting bespoke social media marketing strategies. Transform your brand's digital footprint, engage audiences, and drive unprecedented growth. Partner with us today for success tomorrow!"
@@ -27,11 +20,11 @@ export default function Document() {
         <meta
           property="og:image"
           itemProp="image"
-          content="https://ccs.csivit.com/ccs_banner.png"
+          content="https://socialsurger.com/ccs_banner.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ccs.csivit.com/" />
+        <meta property="twitter:url" content="https://socialsurger.com/" />
         <meta property="twitter:title" content="Social Surger" />
         <meta
           property="twitter:description"
@@ -39,7 +32,7 @@ export default function Document() {
         />
         <meta
           property="twitter:image"
-          content="https://ccs.csivit.com/ccs_banner.png"
+          content="https://socialsurger.com/ccs_banner.png"
         />
 
         <meta name="keywords" content="ccs" />
