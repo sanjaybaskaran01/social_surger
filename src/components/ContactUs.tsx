@@ -87,14 +87,6 @@ function ContactUs() {
                   value="Send Message"
                   className="text-xl  cursor-pointer justify-self-start outline  bg-surger_purple rounded-2xl transition text-center border-none  w-full py-5 ml-1 text-white ease-in-out duration-300 hover:-translate-y-1 font-bold hover:bg-[#f2a11f] "
                 />
-                {/* 
-<Link
-            href="#contactUs"
-            scroll={false}
-            className="bg-surger_purple text-xl sm:text-2xl scroll-smooth rounded-2xl cursor-pointer transition text-center border-none px-7 py-5 text-white ease-in-out duration-300 hover:-translate-y-1 font-bold w-full sm:w-auto hover:bg-[#f2a11f]"
-          >
-            Contact Us
-          </Link> */}
               </div>
             </form>
           </div>

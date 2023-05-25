@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Social Surger - Digital Agency</title>
       </Head>
       <main className="text-[#222] font-medium">
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </main>
     </>
   );
