@@ -5,12 +5,10 @@ function Services() {
   return (
     <section
       id="services"
-      className="h-screen container mx-auto flex flex-col justify-center"
+      className=" container mx-auto flex flex-col justify-center"
     >
-      <div className="p-6 mb-4 !leading-normal font-bold text-left sm:text-center text-5xl lg:text-7xl">
-        <p className="">
+      <div className="p-6 mb-4 !leading-normal font-bold text-center whitespace-nowrap sm:text-center text-3xl sm:text-5xl lg:text-7xl">
           You have a <span className="bg-surger_purple hover:bg-[#fffcf4] transition ease-in-out duration-300 hover:text-surger_purple text-white">problem</span>.
-        </p>
         <p>
           We create the{" "}
           <span className="bg-[#F2A11E] hover:bg-[#fffcf4] hover:text-[#F2A11E] text-white transition ease-in-out duration-300">solution</span>.

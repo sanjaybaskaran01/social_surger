@@ -12,7 +12,7 @@ function Hero() {
       className="flex flex-col lg:flex-row container lg:px-0 md:px-10 justify-center lg:mt-24  items-center mx-auto"
     >
       <div className="flex flex-col justify-center">
-        <div className=" lg:w-4/5 text-left">
+        <div className=" lg:w-4/5 text-center lg:text-left">
           <div className="text-4xl sm:text-7xl !leading-normal font-bold p-4">
               Struggling to stand out in the {/* Be the talk of the{" "} */}
             <span className="bg-surger_purple whitespace-nowrap  capitalize  hover:bg-[#fffcf4] hover:text-surger_purple transition duration-300 ease-in-out text-white px-1 ">
