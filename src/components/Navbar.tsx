@@ -6,8 +6,8 @@ import Link from "next/link";
 function Navbar() {
   return (
     <div className="py-9 relative self-center w-full z-50">
-      <div className="max-w-3xl h-full mx-auto px-6 font-bold">
-        <div className="sticky shadow-[7px_7px_0_0_#222] flex p-[10px_14px] justify-between items-center bg-white rounded-2xl border-2 border-[#222]">
+      <div className="max-w-md h-full mx-auto px-6 font-bold">
+        <div className="sticky shadow-[7px_7px_0_0_#222] flex p-[10px_14px] justify-evenly items-center bg-white rounded-2xl border-2 border-[#222]">
           <Link href="#hero" scroll={false}>
             <Image
               className="w-32 sm:w-44 h-auto"

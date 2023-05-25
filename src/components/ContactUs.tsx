@@ -1,8 +1,28 @@
 import React from "react";
 import Link from "next/link";
 
-
 function ContactUs() {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const formObject = Object.fromEntries(formData.entries());
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formObject),
+    });
+
+    if (response.ok) {
+      // Handle success
+    } else {
+      // Handle error
+    }
+  };
+
   return (
     <section
       id="contactUs"
@@ -34,7 +54,7 @@ function ContactUs() {
         </div>
         <div className="justify-end">
           <div className="flex flex-col sm:p-[25px_20px]   justify-center shadow-[7px_7px_0_0_#222] border-4 border-[#222] rounded-3xl bg-white">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 px-3 py-5 gap-y-8 items-center">
                 <div className="flex flex-col col-span-2 md:col-span-1 ">
                   <label className="ml-1">Name</label>
