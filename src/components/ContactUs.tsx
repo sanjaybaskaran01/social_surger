@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
 
 function ContactUs() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -8,19 +9,29 @@ function ContactUs() {
     const formData = new FormData(event.currentTarget);
     const formObject = Object.fromEntries(formData.entries());
 
-    const response = await fetch("/api/contact", {
+    const responsePromise = fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formObject),
+    }).then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Error in sending email.");
+      }
     });
 
-    if (response.ok) {
-      // Handle success
-    } else {
-      // Handle error
-    }
+    toast.promise(
+      responsePromise,
+       {
+         loading: 'Sending Email',
+         success: <b>Email sent successfully!</b>,
+         error: <b>Email failed.</b>,
+       }
+     );
+    
   };
 
   return (
@@ -61,6 +72,7 @@ function ContactUs() {
                   <input
                     type="text"
                     required
+                    name="name"
                     className="p-[16px_24px] border-4 mt-2 border-[#222] rounded-2xl text-lg w-full outline-none hover:shadow-[5px_5px_0_0_#222] focus:shadow-[5px_5px_0_0_#222] transition duration-300 ease-in-out"
                     placeholder="John Wick"
                   />
@@ -70,6 +82,7 @@ function ContactUs() {
                   <input
                     type="email"
                     required
+                    name="email"
                     placeholder="johnwick@email.com"
                     className="p-[16px_24px] border-4 mt-2 border-[#222] rounded-2xl text-lg w-full outline-none hover:shadow-[5px_5px_0_0_#222] focus:shadow-[5px_5px_0_0_#222] transition duration-300 ease-in-out"
                   />
@@ -79,6 +92,7 @@ function ContactUs() {
                   <input
                     type="text"
                     required
+                    name="company"
                     placeholder="ACME"
                     className="p-[16px_24px] mt-2 border-4 border-[#222] rounded-2xl text-lg w-full outline-none hover:shadow-[5px_5px_0_0_#222] focus:shadow-[5px_5px_0_0_#222] transition duration-300 ease-in-out"
                   />
@@ -88,6 +102,7 @@ function ContactUs() {
                   <input
                     type="text"
                     required
+                    name="subject"
                     placeholder="Select"
                     className="p-[16px_24px] border-4 mt-2 border-[#222] rounded-2xl text-lg w-full outline-none hover:shadow-[5px_5px_0_0_#222] focus:shadow-[5px_5px_0_0_#222] transition duration-300 ease-in-out"
                   />
@@ -96,7 +111,7 @@ function ContactUs() {
                   <label className="ml-1">Message</label>
                   <textarea
                     id="message"
-                    name="Message"
+                    name="message"
                     maxLength={5000}
                     placeholder="Please write your message..."
                     className="mt-2 max-h-52 max-w-full min-h-[144px] min-w-full p-6 border-4 rounded-3xl bg-white outline-none  shadow-[5px_5px_0_0_#222] border-[#222]"

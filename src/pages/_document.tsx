@@ -6,21 +6,21 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Need a boost in online visibility? Choose Social Surger, the experts in crafting bespoke social media marketing strategies. Transform your brand's digital footprint, engage audiences, and drive unprecedented growth. Partner with us today for success tomorrow!"
+          content="Looking to boost your online presence? Choose Social Surger."
         />
 
-        <meta property="og:site_name" content="Social Surger" />
+        <meta property="og:site_name" content="Social Surger - Digital Agency" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://socialsurger.com/" />
         <meta property="og:title" content="Social Surger" />
         <meta
           property="og:description"
-          content="Need a boost in online visibility? Choose Social Surger, the experts in crafting bespoke social media marketing strategies. Transform your brand's digital footprint, engage audiences, and drive unprecedented growth. Partner with us today for success tomorrow!"
+          content="Looking to boost your online presence? Choose Social Surger."
         />
         <meta
           property="og:image"
           itemProp="image"
-          content="https://socialsurger.com/ccs_banner.png"
+          content="https://socialsurger.com/socialsurger_banner.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -28,11 +28,11 @@ export default function Document() {
         <meta property="twitter:title" content="Social Surger" />
         <meta
           property="twitter:description"
-          content="Need a boost in online visibility? Choose Social Surger, the experts in crafting bespoke social media marketing strategies. Transform your brand's digital footprint, engage audiences, and drive unprecedented growth. Partner with us today for success tomorrow!"
+          content="Looking to boost your online presence? Choose Social Surger."
         />
         <meta
           property="twitter:image"
-          content="https://socialsurger.com/ccs_banner.png"
+          content="https://socialsurger.com/socialsurger_banner.png"
         />
 
         <meta name="keywords" content="ccs" />
