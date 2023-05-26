@@ -24,7 +24,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const mailOptions = {
     from: "socialsurger@gmail.com",
     to: 'socialsurger@gmail.com',
-    subject: `[ WEBSITE ] ${subject} - from ${name} : ${email}`,
+    subject: `[ WEBSITE INQUIRY ] ${subject} - from ${name} : ${email}`,
     text: `Company: ${company}\nMessage: ${message}`,
   };
 
